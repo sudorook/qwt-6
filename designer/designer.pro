@@ -84,7 +84,7 @@ contains(QWT_CONFIG, QwtDesigner) {
         # into the plugin. Not supported on Windows !
 
         QMAKE_RPATHDIR *= $${QWT_INSTALL_LIBS}
-        qwtAddLibrary($${QWT_OUT_ROOT}/lib, qwt)
+        qwtAddLibrary($${QWT_OUT_ROOT}/lib, qwt-qt$${QT_MAJOR_VERSION})
 
         contains(QWT_CONFIG, QwtDll) {
 
